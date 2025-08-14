@@ -17,8 +17,8 @@ const Navbar = () => {
 
   return (
     <nav className=" text-red-400 shadow-2xs mb-8">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center font-bold text-xm">
-        <Link href={"/"}>
+      <div className="container mx-auto px-4 py-3 flex items-center gap-6">
+        <Link className="font-bold whitespace-nowrap shrink-0" href={"/"}>
           My <span className="text-amber-500">portfolio</span>
         </Link>
         <div className="container mx-auto flex justify-between lg:justify-start w-full items-center py-4">
