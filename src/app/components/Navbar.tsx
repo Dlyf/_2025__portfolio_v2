@@ -1,4 +1,5 @@
 "use client";
+import { cn } from "@/lib/utils"
 
 import React, { useState } from "react";
 import NavLink from "./NavLink";
@@ -15,15 +16,25 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-opacity-100">
-      <div className="flex flex-row container md:bg-amber-700 lg:py-4 flex-wrap justify-between mx-auto px-4 py-2 max-[36rem]:text-2xl font-bold ">
+    <nav className=" text-red-400 shadow-2xs mb-8">
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center font-bold text-xm">
         <Link href={"/"}>
           My <span className="text-amber-500">portfolio</span>
         </Link>
+        <div className="container mx-auto flex justify-between lg:justify-start w-full items-center py-4">
+        {/* menu hidden p-4 text-2xl h-fit w-full max-[36rem]:flex-row */}
+          <ul className="max-[36rem]:hidden  flex items-center space-x-1.5 ml-0.188rem">
+            {navLinks.map((link, index) => (
+              <li key={index}>
+                <NavLink href={link.href} title={link.label} />
+              </li>
+            ))}
+          </ul>
+        </div>
         {/* mobile-menu  */}
-        <div className="block ml-auto">
-          {/* <Button className="bg-amber-500" variant="outline">test</Button> */}
+        <div className="block ml-auto sm:hidden">
           {!navbarOpen ? (
+            // menu flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white
             <Button
               onClick={() => setNavbarOpen(true)}
               variant="outline"
@@ -41,15 +52,7 @@ const Navbar = () => {
             </Button>
           )}
         </div>
-        <div className=" mt-8 flex flex-col gap-4 max-[36rem]:block max-[36rem]:w-auto">
-          <ul className="menu hidden p-4 text-2xl h-fit w-full max-[36rem]:flex-row">
-            {navLinks.map((link, index) => (
-              <li key={index}>
-                <NavLink href={link.href} title={link.label} />
-              </li>
-            ))}
-          </ul>
-        </div>
+        {/* mt-8 md:flex space-x-6 font-medium flex-col gap-4 max-[36rem]:block max-[36rem]:w-auto */}
       </div>
       {navbarOpen ? <MenuOverlay /> : null}
     </nav>
