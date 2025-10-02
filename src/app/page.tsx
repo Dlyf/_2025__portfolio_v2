@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import HeroTest from "./components/HeroTest";
 import LinkCard from "./components/LinkCard";
+import Skills from "./components/Skills";
 
 export default function Home() {
   return (
@@ -12,7 +13,8 @@ export default function Home() {
       <HeroSection />
       {/* <HeroTest /> */}
       <LinkCard />
-      <Header />
+      {/* <Header /> */}
+      <Skills />
 
 
     </main>

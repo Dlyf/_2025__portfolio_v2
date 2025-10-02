@@ -9,6 +9,9 @@
     --breakpoint-xl: 75rem;   /* 1200px */
     --breakpoint-2xl: 150rem; /* 2400px */
   }
+html, body {
+  overflow-x: hidden;
+}
 
   /* --breakpoint-xs: 30rem;
   --breakpoint-2xl: 100rem;
