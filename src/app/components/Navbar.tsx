@@ -18,11 +18,11 @@ const Navbar = () => {
   return (
     // Fixer le sticky du navbar
     <nav className=" text-red-400 shadow-2xs sticky top-0">
-      <div className="px-8 flex items-center gap-6">
+      <div className="container px-8 flex items-center gap-6">
         <Link className="font-bold whitespace-nowrap shrink-0" href={"/"}>
           My <span className="text-amber-500">portfolio</span>
         </Link>
-        <div className="max-w-screen-x mx-auto flex lg:justify-start items-center py-4">
+        <div className="container mx-auto flex justify-between lg:justify-start items-center py-4">
           <ul className="max-[36rem]:hidden flex items-center space-x-1.5">
             {navLinks.map((link, index) => (
               <li key={index}>
@@ -31,7 +31,7 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <div className="block  sm:hidden">
+        <div className="block ml-auto sm:hidden">
           {!navbarOpen ? (
             <Button
               onClick={() => setNavbarOpen(true)}
@@ -54,6 +54,17 @@ const Navbar = () => {
       {navbarOpen ? <MenuOverlay /> : null}
     </nav>
   );
+  {
+    /* <div>
+      <ul className=''>
+          {navLinks.map((link, id) => (
+              <li key={id}>
+                  <NavLink href={link.href} title={link.label}/>
+              </li>
+          ))}
+      </ul>
+  </div> */
+  }
 };
 
 export default Navbar;
