@@ -20,8 +20,8 @@ const LinkCard = () => {
   return (
     <div className="text-center mt-5 m-auto">
       <div className="">
-        <Button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black">Contactez moi</Button>
-        <Button className="px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-400 text-black border border-white mt-3">Télécharger CV</Button>
+        <Button className="px-6 py-3 w-full md:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black">Contactez moi</Button>
+        <Button className="px-1 py-3 w-full md:w-fit rounded-full bg-transparent hover:bg-slate-400 text-black border border-white mt-3">Télécharger CV</Button>
 
         {/* <Card className="w-full max-w-sm mb-3">
         </Card> */}
