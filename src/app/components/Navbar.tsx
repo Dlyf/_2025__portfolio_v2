@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     // Fixer le sticky du navbar
     <nav className=" text-red-400 shadow-2xs sticky top-0">
-      <div className="container px-8 flex items-center gap-6">
+      <div className="px-8 flex items-center gap-6">
         <Link className="font-bold whitespace-nowrap shrink-0" href={"/"}>
           My <span className="text-amber-500">portfolio</span>
         </Link>
@@ -36,7 +36,8 @@ const Navbar = () => {
             <Button
               onClick={() => setNavbarOpen(true)}
               variant="outline"
-              className="menu flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              className="menu flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200
+               hover:text-white hover:border-white w-full md:w-auto"
             >
               <AlignRight className="h-5 w-5" />
             </Button>
