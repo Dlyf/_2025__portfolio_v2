@@ -1,9 +1,18 @@
+import { ITag } from '@/types'
 import React from 'react'
 
-const Tag = ({ name }) => {
+
+const Tag = ({ name }: ITag ) => {
   return (
-    <span className='rounded-full bg-gray-300 p-2 my-2'>{name}</span>
+    <div className="flex flex-wrap gap-2">
+      <span className='px-1 mt-1 rounded-full bg-neutral shadow-xl
+      text-sm border border-bleu
+      hover:bg-sky-500'>
+        {name}
+      </span>
+
+    </div>
   )
 }
 
-export default Tag 
+export default Tag;

@@ -5,6 +5,11 @@ import HeroSection from "./components/HeroSection";
 import HeroTest from "./components/HeroTest";
 import LinkCard from "./components/LinkCard";
 import Skills from "./components/Skills";
+// import TestComp from "./components/TestComponent";
+import ProjectSection from "./components/ProjectSection";
+import Experiences from "./components/Experiences";
+import Footer from "./components/Footer";
+import FormSection from "./components/FormSection";
 
 export default function Home() {
   return (
@@ -13,10 +18,14 @@ export default function Home() {
       <HeroSection />
       {/* <HeroTest /> */}
       <LinkCard />
+      {/* <TestComponent /> */}
       {/* <Header /> */}
       <Skills />
-
-
+      <ProjectSection />
+      <Experiences />
+      {/* <TestComp /> */}
+      <FormSection />
+      <Footer />
     </main>
   );
 }

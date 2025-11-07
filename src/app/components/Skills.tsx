@@ -1,36 +1,51 @@
-import React from 'react'
-import Section from './Section'
-import Tag from './Tag'
-import { Card } from '@/components/ui/card';
+import React from "react";
+import Section from "./Section";
+import Tag from "./Tag";
 
-const skills = [
-    "JavaScript (ES6+)",
-    "React.js",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "SQL",
-    "HTML & CSS",
-    "Git & GitHub",
-    "RESTful APIs",
-    "Test-Driven Development (TDD)",
-    "Agile/Scrum",
-  ];
-  
+const skills: Record<string, string[]> = {
+  Langages: ["JavaScript", "TypeScript", "Node.js"],
+  "Framework et Libraries": ["React", "Node.js", "Next.js", "TailwindCSS"],
+  // Web: [
+  //   "Sass",
+  //   "TailwindCSS",
+  //   "Firebase",
+  //   "NoSQL",
+  //   "SQL",
+  //   "Heroku",
+  //   "Netlify",
+  //   "AWS",
+  //   "GIT",
+  //   "Docker",
+  //   "Kubernetes",
+  //   "GCP",
+  // ],
+  "Bases de données": ["PostgreSQL", "MongoDB", "MySQL"],
+};
+
 const Skills = () => {
   return (
-    <Section className='mt-24 mr-1 ml-1 bg-white text-left rounded-xl p-2 max-md:p-5 shadow-md'>
-        <section className='bg-white text-left rounded-2xl p-1 shadow-md mt-3'>
-            <h2 className='text-lg md:text-2xl mb-2 font-semibold'>Compétences</h2>
-            <ul className='flex flex-wrap leading-10'>
-                {skills.map((skill, index) => (
-                    <li key={index} className='mr-2'><Tag name={skill} /></li>
-                ))}
-            </ul>
-        </section>
-    </Section>
-    
-  )
-}
+    <div className="mt-9 max-w-4xl">
+      <Section className="max-w-4xl mx-auto px-5 text-gray-100 border-hidden">
+      <h2 className="text-3xl font-bold text-center">Mes compétences</h2>
+        <ul className="flex flex-wrap gap-2">
+          {Object.keys(skills).map((skill, index) => {
+            return (
+              <div key={index}>
+                <h3 className="text-lg">{skill}</h3>
+                <div className="flex flex-wrap gap-2">
+                  {skills[skill].map(skill => {
+                    return (
+                      <Tag key={skill} name={skill} />
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })}
+        </ul>
+      </Section>
+    </div>
+  );
+};
 
-export default Skills
+export default Skills;
