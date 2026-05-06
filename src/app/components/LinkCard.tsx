@@ -1,7 +1,7 @@
 import React from "react";
 import Section from "./Section";
 import { Card } from "@/components/ui/card";
-import { Button } from "@/src/components/ui/button";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 interface User {
@@ -19,14 +19,14 @@ console.log(names) // Output: ['Alice', 'Bob']
 
 const LinkCard = () => {
   return (
-    <div className="text-center mt-5 m-auto">
-      <div className="flex flex-col gap-4 items-center w-full max-w-md mx-auto">
-        <Button className="  bg-blue-500 text-white text-center font-bold p-9 w-3xs">Contactez moi</Button>
-        <a className="px-1 py-3 w-full md:w-fit rounded-full bg-transparent hover:bg-slate-400 text-black border border-white mt-3">Télécharger CV</a>
+    <div className=" mt-5 m-auto">
+        <Button className="  bg-blue-500 hover:bg-blue-600 text-white text-center px-6 py-6">Contactez moi</Button>
+        <Button variant="secondary" className="  bg-blue-500 hover:bg-blue-600 text-white text-center px-6 py-6">test</Button>
+
+        {/* <a className="px-1 py-3 w-full md:w-fit rounded-full bg-transparent hover:bg-slate-400 text-black border border-white mt-3">Télécharger CV</a> */}
 
         {/* <Card className="w-full max-w-sm mb-3">
         </Card> */}
-      </div>
         {/* <Card className="w-full max-w-sm mb-3">
           <Button>Je suis Linketree</Button>
         </Card>
