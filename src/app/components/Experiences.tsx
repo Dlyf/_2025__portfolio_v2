@@ -6,19 +6,19 @@ import Section from "./Section";
 
 const EXPERIENCES: IExperiences[] = [
   {
-    title: "E-commerce Platform",
+    title: "Weenect",
     image:
-      "https://media.licdn.com/dms/image/v2/C4D0BAQFvRGFuqFC42Q/company-logo_100_100/company-logo_100_100/0/1630529401436/weenect_logo?e=1762387200&v=beta&t=s6dq43SxvsuYr5qctqS10YUT9rNcxvpwJp5CG1XrQAw",
-    role: "Développeur Full Stack",
-    date: "Janvier 2022 - Juin 2022",
+      "https://media.licdn.com/dms/image/v2/C4D0BAQFvRGFuqFC42Q/company-logo_100_100/company-logo_100_100/0/1630529401436/weenect_logo?e=1764806400&v=beta&t=GjoflX7i-5fCd8mYfSJIZ4F_Qi-fRiEZ9idAth32Dr0",
+    role: "Développeur Front-end",
+    date: "Décembre 2022 - Septembre 2023",
     url: "test.com",
   },
   {
-    title: "E-commerce Platform2",
+    title: "Engie Solutions",
     image:
-      "https://media.licdn.com/dms/image/v2/D4E0BAQEY0HUKZF-hcg/company-logo_100_100/company-logo_100_100/0/1730719809971/engie_solutions_logo?e=1762387200&v=beta&t=SUXJ9jWw4M203UdTk9NCwQnlctlIzpQh-Bv4umnkE7U",
-    role: "Développeur Full Stack",
-    date: "Janvier 2022 - Juin 2022",
+      "https://media.licdn.com/dms/image/v2/D4E0BAQEY0HUKZF-hcg/company-logo_100_100/company-logo_100_100/0/1730719809971/engie_solutions_logo?e=1764806400&v=beta&t=xZVsAMKuPRjnSgNrSa7XbMyB30OopCVunt7TkpFK09I",
+    role: "Développeur Front-end",
+    date: "Septembre 2018 - Juillet 2020",
     url: "test1.com",
   },
 ];
@@ -26,8 +26,8 @@ const EXPERIENCES: IExperiences[] = [
 const Experiences = () => {
   return (
     <Section className="px-5 mt-3 text-gray-100">
-      <h2 className="text-3xl font-bold text-center">Mes expériences</h2>
-      <Card className='w-full flex-[3] flex flex-col rounded-lg shadow-md p-4 gap-2'>
+      <h2 className="mb-8 text-3xl font-bold text-center">Mes expériences</h2>
+      <Card className='w-full flex-[3] flex flex-col rounded-lg shadow-md p-4 gap-2 mb-8'>
         {EXPERIENCES.map((experience) => (
           <div className="w-full flex-[2]" key={experience.title}>
             <Link

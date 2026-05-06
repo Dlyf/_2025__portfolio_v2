@@ -10,22 +10,32 @@ import ProjectSection from "./components/ProjectSection";
 import Experiences from "./components/Experiences";
 import Footer from "./components/Footer";
 import FormSection from "./components/FormSection";
+import Tape from "./components/Tape";
+
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen bg-blue-300">
-      <Navbar />
-      <HeroSection />
-      {/* <HeroTest /> */}
-      <LinkCard />
-      {/* <TestComponent /> */}
-      {/* <Header /> */}
-      <Skills />
-      <ProjectSection />
-      <Experiences />
-      {/* <TestComp /> */}
-      <FormSection />
-      <Footer />
+    <main className="flex flex-col min-h-screen">
+        {/* <Navbar /> */}
+        <Header />
+      <div className="flex flex-col">
+        <HeroSection />
+        {/* Mettre skill en bas de la photo ? */}
+        {/* <Tape /> */}
+        <Skills />
+      </div>
+      <div className="z-10 flex flex-col gap-4">
+        {/* <HeroTest /> */}
+        {/* <LinkCard /> */}
+        {/* <TestComponent /> */}
+        {/* <Header /> */}
+        <ProjectSection />
+        {/* <Experiences /> */}
+        {/* <TestComp /> */}
+        <FormSection />
+        <Footer />
+
+      </div>
     </main>
   );
 }

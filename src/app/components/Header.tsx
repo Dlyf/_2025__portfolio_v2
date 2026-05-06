@@ -1,12 +1,19 @@
 import React from 'react'
 import Section from './Section'
+import Navbar from './Navbar'
 
 const Header = () => {
   return (
-    <header className='mt-24 px-4'>
+    <header className='top-0 py-4 px-4'>
       <Section className='flex items-baseline'>
-      
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, error maiores! Voluptate nostrum earum obcaecati animi dolor aut id. Eum ipsum voluptates illum quia, qui reiciendis minus animi voluptate hic!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vel maxime perferendis aut quisquam? Deserunt dolores, voluptas aliquam sit animi vel ipsum quae, esse, iusto porro ad! Non, fuga voluptatum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore rem, culpa accusantium explicabo similique reprehenderit quod corporis ab illo libero error deleniti incidunt nobis maiores esse distinctio accusamus optio voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nesciunt vel rerum facere, qui aperiam. Ducimus, autem nemo laborum et voluptatum doloribus. Pariatur voluptatibus ipsam ipsum quasi animi maiores distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia harum, consequatur voluptatem molestias fugit cumque vero corrupti numquam ut nesciunt sint eos laudantium quo praesentium dolor asperiores eveniet fugiat eaque?harum, consequatur voluptatem molestias fugit cumque vero corrupti numquam ut nesciunt sint eos laudantium quo praesentium dolor asperiores eveniet fugiat eaque?harum, consequatur voluptatem molestias fugit cumque vero corrupti numquam ut nesciunt sint eos laudantium quo praesentium dolor asperiores eveniet fugiat eaque?harum, consequatur voluptatem molestias fugit cumque vero corrupti numquam ut nesciunt sint eos laudantium quo praesentium dolor asperiores eveniet fugiat eaque?harum, consequatur voluptatem molestias fugit cumque vero corrupti numquam ut nesciunt sint eos laudantium quo praesentium dolor asperiores eveniet fugiat eaque?harum, consequatur voluptatem molestias fugit cumque vero corrupti numquam ut nesciunt sint eos laudantium quo praesentium dolor asperiores eveniet fugiat eaque?harum, consequatur voluptatem molestias fugit cumque vero corrupti numquam ut nesciunt sint eos laudantium quo praesentium dolor asperiores eveniet fugiat eaque?harum, consequatur voluptatem molestias fugit cumque vero corrupti numquam ut nesciunt sint eos laudantium quo praesentium dolor asperiores eveniet fugiat eaque?harum, consequatur voluptatem molestias fugit cumque vero corrupti numquam ut nesciunt sint eos laudantium quo praesentium dolor asperiores eveniet fugiat eaque?harum, consequatur voluptatem molestias fugit cumque vero corrupti numquam ut nesciunt sint eos laudantium quo praesentium dolor asperiores eveniet fugiat eaque?harum, consequatur voluptatem molestias fugit cumque vero corrupti numquam ut nesciunt sint eos laudantium quo praesentium dolor asperiores eveniet fugiat eaque?praesentium dolor asperiores eveniet fugiat eaque?harum, consequatur voluptatem molestias fugit cumque vero corrupti numquam ut nesciunt sint eos laudantium quo praesentium dolor asperiores eveniet fugiat eaque?praesentium dolor asperiores eveniet fugiat eaque?harum, consequatur voluptatem molestias fugit cumque vero corrupti numquam ut nesciunt sint eos laudantium quo praesentium dolor asperiores eveniet fugiat eaque?praesentium dolor asperiores eveniet fugiat eaque?harum, consequatur voluptatem molestias fugit cumque vero corrupti numquam ut nesciunt sint eos laudantium quo praesentium dolor asperiores eveniet fugiat eaque?praesentium dolor asperiores eveniet fugiat eaque?harum, consequatur voluptatem molestias fugit cumque vero corrupti numquam ut nesciunt sint eos laudantium quo praesentium dolor asperiores eveniet fugiat eaque?praesentium dolor asperiores eveniet fugiat eaque?harum, consequatur voluptatem molestias fugit cumque vero corrupti numquam ut nesciunt sint eos laudantium quo praesentium dolor asperiores eveniet fugiat eaque?praesentium dolor asperiores eveniet fugiat eaque?harum, consequatur voluptatem molestias fugit cumque vero corrupti numquam ut nesciunt sint eos laudantium quo praesentium dolor asperiores eveniet fugiat eaque?</Section>
+        <h1 className='text-lg font-bold text-primary'>DomTechLYF</h1>
+        <div className='flex-1'>
+          <ul className='flex items-center gap-2'>
+            <Navbar />
+          </ul>
+          
+        </div>
+      </Section>
     </header>
   )
 }

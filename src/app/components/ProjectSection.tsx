@@ -1,54 +1,61 @@
 import React from "react";
 import Section from "./Section";
-import { Card } from "../../components/ui/card";
+import { Card, CardDescription, CardTitle } from "../../components/ui/card";
 import { IProject } from "../../types/index";
 import Link from "next/link";
 
 const projects: IProject[] = [
   {
-    title: "E-commerce Platform",
+    title: "Allergy Checker",
     description:
-      "A full-stack e-commerce platform built with Next.js, TypeScript, and Tailwind CSS.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
-    githubLink: "https://github.com",
-    demoLink: "https://demo.com",
-    image: "/projects/e-commerce-website.png",
+      "Une solution permettant de vérifier les allergies dans ta nourriture en scannant un code-barres ou en recherchant un produit.",
+    technologies: ["React", "Material-UI", "MongoDB", "Express"],
+    githubLink: "https://github.com/Dlyf/React-allergy-checker",
+    demoLink: "https://allergy-checker.netlify.app/",
+    image: "https://dlyf.github.io/portfolio2022/img/testAllergyChecker.png",
   },
   {
-    title: "Task Management App",
+    title: "Panda Club",
     description:
-      "A collaborative task management application with real-time updates.",
+      "A full-stack e-commerce platform built with Next.js, TypeScript, and Tailwind CSS.",
     technologies: ["React", "Node.js", "MongoDB", "Socket.io"],
     githubLink: "https://github.com",
     demoLink: "https://demo.com",
-    image: "/projects/task-manager.webp",
+    image: "https://dlyf.github.io/portfolio2022/img/testAllergyChecker.png",
   },
   {
-    title: "Portfolio Website",
+    title: "E-commerce Platform3",
     description:
-      "My personal portfolio website showcasing my projects and skills.",
+      "A full-stack e-commerce platform built with Next.js, TypeScript, and Tailwind CSS.",
     technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
     githubLink: "https://github.com",
     demoLink: "https://demo.com",
-    image: "/projects/portfolio-website.jpg",
+    image: "https://dlyf.github.io/portfolio2022/img/testAllergyChecker.png",
   },
 ];
 
 const ProjectSection = () => {
   return (
-    <Section className="px-5 mt-3 text-gray-100">
-      <h2 className="text-3xl font-bold text-center">Mes projets</h2>
-      <div className="flex flex-col md:flex-col gap-8">
+    <Section className=" py-7 px-4">
+      <h2 className="mt-8 text-3xl font-bold text-center text-amber-50">Mes projets</h2>
+      <div className="flex flex-col md:flex-row gap-8 mb-8">
         {projects.map((project) => (
-          <Card className="w-full flex-[3] flex flex-col rounded-lg shadown-md p-4 gap-2" key={project.title}>
-            <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-            <p className="text-gray-600 mb-4">{project.description}</p>
+          <Card className="mx-auto py-7 px-4" key={project.title}>
+            <CardTitle className="text-xl font-semibold mb-2">{project.title}</CardTitle>
+            <div>
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-48 object-cover mb-4 rounded-md"
+              />
+            </div>
+            <CardDescription className="text-amber-50 mb-4">{project.description}</CardDescription>
             <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech) => (
                 <span
                   key={tech}
-                  className="px-1 rounded-full bg-neutral shadow-xl text-content/80
-                  text-sm border border-bleu
+                  className="px-1 rounded-full bg-white shadow-xl text-content/80
+                  text-sm border border-amber-50
                   hover:bg-sky-500 flex items-center
                   gap-1.5"
                 >
@@ -59,13 +66,13 @@ const ProjectSection = () => {
             <div className="flex gap-5 mt-2">
               <Link
                 href={project.githubLink}
-                className="flex items-center gap-2 text-secondary"
+                className="flex items-center gap-2 text-secondary bg-amber-50 rounded-full"
               >
                 <span>code</span>
               </Link>
               <Link
                 href={project.githubLink}
-                className="flex items-center gap-2 text-secondary"
+                className="flex items-center gap-2 text-secondary bg-amber-50 rounded-full"
               >
                 <span>code</span>
               </Link>

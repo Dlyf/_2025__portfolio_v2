@@ -8,7 +8,7 @@ import { AlignRight } from "lucide-react";
 import { X } from "lucide-react";
 
 import Link from "next/link";
-import { Button } from "@/src/components/ui/button";
+import { Button } from "@/components/ui/button";
 import MenuOverlay from "./MenuOverlay";
 // Créer un nav avec de la data fait avec data
 
@@ -17,11 +17,11 @@ const Navbar = () => {
 
   return (
     // Fixer le sticky du navbar
-    <nav className=" text-red-400 shadow-2xs sticky top-0">
+    <nav className="shadow-2xs">
       <div className="px-8 flex items-center gap-6">
-        <Link className="font-bold whitespace-nowrap shrink-0" href={"/"}>
+        {/* <Link className="font-bold whitespace-nowrap shrink-0" href={"/"}>
           My <span className="text-amber-500">portfolio</span>
-        </Link>
+        </Link> */}
         <div className="container mx-auto flex justify-between lg:justify-start items-center py-4">
           <ul className="max-[36rem]:hidden flex items-center space-x-1.5">
             {navLinks.map((link, index) => (

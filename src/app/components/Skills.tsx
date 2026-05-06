@@ -24,15 +24,15 @@ const skills: Record<string, string[]> = {
 
 const Skills = () => {
   return (
-    <div className="mt-9 max-w-4xl">
-      <Section className="max-w-4xl mx-auto px-5 text-gray-100 border-hidden">
-      <h2 className="text-3xl font-bold text-center">Mes compétences</h2>
+    <div className="max-w-4xl md:hidden">
+      <Section className="max-w-4xl mx-auto px-5  border-hidden mt-8">
+      <h2 className="text-3xl font-bold text-center">Mes compétencess</h2>
         <ul className="flex flex-wrap gap-2">
           {Object.keys(skills).map((skill, index) => {
             return (
-              <div key={index}>
+              <div className="mb-2" key={index}>
                 <h3 className="text-lg">{skill}</h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-6">
                   {skills[skill].map(skill => {
                     return (
                       <Tag key={skill} name={skill} />
