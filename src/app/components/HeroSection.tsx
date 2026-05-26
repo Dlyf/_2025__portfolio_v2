@@ -1,9 +1,10 @@
 import React from "react";
 import Section from "./Section";
-import { Button } from "@/src/components/ui/button";
+// import { Button } from "@/src/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Tag from "./Tag";
 import LinkCard from "./LinkCard";
+import Image from "next/image";
 
 const HeroSection = () => {
   const skills: Record<string, string[]> = {
@@ -36,11 +37,11 @@ const HeroSection = () => {
         <Separator className="my-3 bg-white font-extrabold" />
         <div className="border mb-8 rounded-xs shadow-lg">
           <p className="text-base px-4">
-            Développeur full stack - 2 ans d'expérience ayant évolué au sein
+            Développeur full stack - 2 ans d&apos;aposexpérience ayant évolué au sein
             d’Engie Ineo Cybersécurité, filiale du groupe Engie et 10 mois dans
             le domaine des objets connectés (IoT).
             <br /> <br />
-            J’ai eu l’opportunité de participer au développement d’applications
+            J&apos;ai eu l&apos;opportunité de participer au développement d&apos;applications
             web existantes, en collaboration avec les équipes produit et design,
             à partir de maquettes Figma et avec l’écosystème JavaScript (React,
             Next.js, TypeScript).
@@ -52,10 +53,12 @@ const HeroSection = () => {
         </div>
         <LinkCard />
       </div>
-      <div className=" flex-[1] max-[36rem]:m-auto mt-8 max-[36rem]:hidden max-[36rem]:mb-0 mb-0">
-        <img
+      <div className="flex-[1] max-[36rem]:m-auto mt-8 max-[36rem]:hidden max-[36rem]:mb-0 mb-0">
+        <Image 
+          width={200}
+          height={300}
           className="max-md:m-auto md:m-auto max-[36rem]:m-auto mx-auto h-[200px] aspect-square rounded-full shadow-lg"
-          src="https://media.licdn.com/dms/image/v2/D4E03AQFGITVlx-_-AQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723117015218?e=1764806400&v=beta&t=vMobiiKzxdmbvvYbCqXWNXmVWP46M5DgkpKfUXkCo5I"
+          src="https://media.licdn.com/dms/image/v2/D4E03AQGsectNeu7w6Q/profile-displayphoto-crop_800_800/B4EZ0cK9LWJAAI-/0/1774294129586?e=1779926400&v=beta&t=iKt7gY3yHg9mtH4YV1VWvFhi4YTtYebu-8XQgtamFW4"
           alt="image photo"
         />
         <div className="max-w-4xl max-[36rem]:hidden">

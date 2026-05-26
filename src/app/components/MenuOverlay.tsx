@@ -2,11 +2,11 @@ import React from "react";
 import NavLink from "./NavLink";
 import { navLinks } from "../data";
 
-interface MenuOverlayProps {
-  links: string;
-  link: string;
-  index: string;
-}
+// interface MenuOverlayProps {
+//   links: string;
+//   link: string;
+//   index: string;
+// }
 const MenuOverlay = () => {
     return (
       <ul className="flex flex-col py-4 items-start">

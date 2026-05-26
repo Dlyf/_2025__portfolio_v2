@@ -3,6 +3,7 @@ import { IExperiences } from "../../types/index";
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import Section from "./Section";
+import Image from "next/image";
 
 const EXPERIENCES: IExperiences[] = [
   {
@@ -34,9 +35,11 @@ const Experiences = () => {
               href={experience.url}
               className="w-full inline-flex items-center gap-4 bg-accent text-accent-foreground hover:bg-slate-300 transition-colors rounded"
             >
-              <img
+              <Image
                 src={experience.image}
                 alt={experience.title}
+                width={800}
+                height={600}
                 className="w-10 h-10 object-contain rounded-md"
               />
               <div>

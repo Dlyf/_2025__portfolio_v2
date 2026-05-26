@@ -3,6 +3,7 @@ import Section from "./Section";
 import { Card, CardDescription, CardTitle } from "../../components/ui/card";
 import { IProject } from "../../types/index";
 import Link from "next/link";
+import Image from "next/image";
 
 const projects: IProject[] = [
   {
@@ -43,9 +44,11 @@ const ProjectSection = () => {
           <Card className="mx-auto py-7 px-4" key={project.title}>
             <CardTitle className="text-xl font-semibold mb-2">{project.title}</CardTitle>
             <div>
-              <img
+              <Image
                 src={project.image}
                 alt={project.title}
+                width={800}
+                height={600}
                 className="w-full h-48 object-cover mb-4 rounded-md"
               />
             </div>

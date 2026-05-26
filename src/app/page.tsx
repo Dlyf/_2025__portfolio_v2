@@ -21,7 +21,7 @@ export default function Home() {
       <div className="flex flex-col">
         <HeroSection />
         {/* Mettre skill en bas de la photo ? */}
-        {/* <Tape /> */}
+        <Tape />
         <Skills />
       </div>
       <div className="z-10 flex flex-col gap-4">
