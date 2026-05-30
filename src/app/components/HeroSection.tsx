@@ -1,6 +1,5 @@
 import React from "react";
 import Section from "./Section";
-// import { Button } from "@/src/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Tag from "./Tag";
 import LinkCard from "./LinkCard";
@@ -37,16 +36,16 @@ const HeroSection = () => {
         <Separator className="my-3 bg-white font-extrabold" />
         <div className="border mb-8 rounded-xs shadow-lg">
           <p className="text-base px-4">
-            Développeur full stack - 2 ans d&apos;aposexpérience ayant évolué au sein
-            d’Engie Ineo Cybersécurité, filiale du groupe Engie et 10 mois dans
+            Développeur full stack - 2 ans d&apos;expérience ayant évolué au sein
+            d&apos;Engie Ineo Cybersécurité, filiale du groupe Engie et 10 mois dans
             le domaine des objets connectés (IoT).
             <br /> <br />
             J&apos;ai eu l&apos;opportunité de participer au développement d&apos;applications
             web existantes, en collaboration avec les équipes produit et design,
-            à partir de maquettes Figma et avec l’écosystème JavaScript (React,
+            à partir de maquettes Figma et avec l&apos;écosystème JavaScript (React,
             Next.js, TypeScript).
             <br /> <br />
-            Ces expériences m’ont permis de renforcer mes compétences
+            Ces expériences m&apos;ont permis de renforcer mes compétences
             techniques, ainsi que mon autonomie, ma curiosité et ma capacité à
             travailler en équipe pour mener à bien des projets.
           </p>
